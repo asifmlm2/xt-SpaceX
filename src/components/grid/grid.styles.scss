@@ -1,0 +1,29 @@
+.gridWrapper {    
+    display: grid;
+    grid-template-columns: 1fr;       
+    grid-gap: 10px;
+}
+
+.infoMsg { 
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+@media only screen and (min-device-width : 700px) and (max-device-width : 1023px) {
+    .gridWrapper {    
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-device-width : 1024px){
+    .gridWrapper {    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+    }
+
+    .infoMsg {
+            margin: 10px;
+    }
+}
